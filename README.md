@@ -4,6 +4,7 @@
 - View online top headlines from NewsApi
 - View details of an article
 - Save article on the local database
+
 You can see what components were used to build this android application below:
 
 ## Description
