@@ -1,8 +1,12 @@
 # Android application for News
 
-**News Application** offers user to view Top Headlines in the world. All the data is collected from https://newsapi.org/docs, which offers free public API to use in such applications. You can see what components were used to build this android application below:
+**News Application** offers user to view Top Headlines in the world. All the data is collected from https://newsapi.org/docs, which offers free public API to use in such applications. App features:
+- View online top headlines from NewsApi
+- View details of an article
+- Save article on the local database
+You can see what components were used to build this android application below:
 
-## Descriptions
+## Description
 - App name - NewApp
 - Language Used - Kotlin
 - Architecture Used - MVVM
