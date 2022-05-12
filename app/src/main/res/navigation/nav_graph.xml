@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/onlineFragment"
+        android:name="com.example.newapp.view.fragments.OnlineFragment"
+        android:label="fragment_online"
+        tools:layout="@layout/fragment_online" >
+        <action
+            android:id="@+id/action_onlineFragment_to_DetailsFragment"
+            app:destination="@id/DetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/offLineFragment"
+        android:name="com.example.newapp.view.fragments.OffLineFragment"
+        android:label="fragment_offline"
+        tools:layout="@layout/fragment_offline" >
+        <action
+            android:id="@+id/action_offlineFragment_to_DetailsFragment"
+            app:destination="@+id/DetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.newapp.view.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_onlineFragment"
+            app:destination="@id/onlineFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_offLineFragment"
+            app:destination="@id/offLineFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/DetailsFragment"
+        android:name="com.example.newapp.view.fragments.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="article_data"
+            app:argType="com.example.newapp.model.Article"
+            app:nullable="true" />
+    </fragment>
+</navigation>
